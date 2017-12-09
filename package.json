@@ -1,0 +1,25 @@
+{
+  "name": "noderadio",
+  "version": "1.0.0",
+  "description": "Radio tuner app",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ddraillantclark/NodeRadio.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Daniel Raillant-Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddraillantclark/noderadio/issues"
+  },
+  "homepage": "https://github.com/ddraillantclark/noderadio#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
