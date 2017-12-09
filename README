@@ -1,0 +1,10 @@
+In order for the speaker NPM package to build on Intel Edison yocto, add the ALSA source code.
+
+Get the ALSA source
+ftp://ftp.alsa-project.org/pub/lib/
+Create the /usr/include/alsa directory if needed
+Copy all .h files from the source /include folder to local /usr/include/alsa
+
+It is also necessary to create a link to the latest libasound libarary for backward compatibility
+
+ln -s /usr/lib/libasound.so.2.2.0 /usr/lib/libasound.so
