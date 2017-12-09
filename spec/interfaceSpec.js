@@ -1,6 +1,6 @@
 var app = require("../app/app.js");
 
-describe("Tuner interface", function() {
+describe("Interface", function() {
 
     it("should be turned off to start", function() {
         expect(app.interface.poweredOn()).toEqual(false);
