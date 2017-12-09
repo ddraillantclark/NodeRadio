@@ -21,6 +21,8 @@
   "homepage": "https://github.com/ddraillantclark/noderadio#readme",
   "dependencies": {
     "audio-speaker": "^1.5.0",
-    "jasmine-node": "^1.14.5"
+    "http": "0.0.0",
+    "jasmine-node": "^1.14.5",
+    "lame": "^1.2.4"
   }
 }
