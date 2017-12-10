@@ -1,10 +1,16 @@
-In order for the speaker NPM package to build on Intel Edison yocto, add the ALSA source code.
+In order for the speaker NPM package to build on Intel Edison yocto, add the ALSA dev library.
 
 Get the ALSA source
 ftp://ftp.alsa-project.org/pub/lib/
-Create the /usr/include/alsa directory if needed
-Copy all .h files from the source /include folder to local /usr/include/alsa
 
-It is also necessary to create a link to the latest libasound libarary for backward compatibility
+tar jxf alsa-lib-1.1.5.tar.bz2
+cd alsa-lib-1.1.5
+./configure
+make install
 
-ln -s /usr/lib/libasound.so.2.2.0 /usr/lib/libasound.so
+Thanks to KurtE for that info!
+https://groups.google.com/forum/#!topic/beagleboard/ndPAME6704E
+https://github.com/KurtE/Intel-Edison-and-Galileo
+
+I also had to manually copy the contents of /node_modules/speaker into /node_modules/audio-speaker/node_modules/speaker because the dependency under audio-speaker
+wouldn't work. Manual fudge to fix later.
